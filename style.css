@@ -1,0 +1,285 @@
+/*
+Colours:
+Rich Black: #121620
+Roman Silver: #8B939C
+Imperial Red: #ff0035
+*/
+
+body {
+    background-color: #121620;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+
+    
+}
+
+.navbar-dark {
+    background-color: #121620;
+}
+
+.nav-link{
+    color: #8B939C !important;
+    transition-duration: 0.25s;
+}
+
+.nav-link:hover{
+    color: #ff0035 !important;
+    
+}
+
+.vl {
+ 
+    background: linear-gradient(to right, 
+    transparent 0%, 
+    transparent calc(50% - 0.81px), 
+    #ff0035 calc(50% - 0.8px), 
+    #ff0035 calc(50% + 0.8px), 
+    transparent calc(50% + 0.81px), 
+    transparent 100%);
+    
+    height: 16vh;
+    position: fixed;
+    
+    bottom: 0;
+}
+
+.vl-left{
+    left: 5%;
+    margin-left: -3px;
+    width: 16px;
+}
+
+.vl-right{
+    right: 5%;
+    margin-right: -3px;
+    width: 24px;
+   
+}
+
+.intro{
+    height: 90vh;
+    display: flex;
+   
+    align-items: center;
+}
+
+
+
+.landing .intro-1 {
+    color: rgb(250, 250, 250);
+    font-weight: 200 !important;
+    font-size: 2vw;
+
+}
+
+.landing .intro-2 {
+    font-size: 4.1vw;     
+
+}
+
+.landing .intro-3 {
+    color: rgb(250, 250, 250);
+    font-weight: 200 !important;
+    font-size: 2.8vw;
+    
+}
+
+.landing .display-1 {
+    color: #ff0035;
+
+}
+
+.btn-outline-light{
+    border-radius: 6px;
+    border-width: 1.5px;
+
+}
+
+.btn-call-to-action{
+    width: 8em;
+    height: 3em;
+}
+
+@media screen and (max-width: 991px) {
+    .hero-image svg{
+        display: none;
+    
+    } 
+    
+    .landing .intro-1 {
+        font-size: 4vw;
+    
+    }
+    
+    .landing .intro-2 {
+        font-size: 6.1vw;     
+    
+    }
+    
+    .landing .intro-3 {
+
+        font-size: 4.8vw;
+    }
+    
+    .landing-right p{
+        font-size: 2vw;
+    }
+}
+
+.hero-image{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+   
+}
+
+.hero-image svg{
+    position: absolute;
+    top: 0;
+
+}
+
+@keyframes flicker {
+    0%   {opacity: 0.1}
+    10%  {opacity: 0.3}
+    20%  {opacity: 0.1}
+    30%  {opacity: 0.3}
+    40%  {opacity: 0.1}
+    50%  {opacity: 0.3}
+    100% {opacity: 0.5}
+  }
+
+
+  @keyframes brighten {
+    from   {opacity: 0.1}
+    to  {opacity: 1}
+   
+  }
+
+.hero-image svg #Light{
+    opacity: 0;
+    animation-name: flicker;
+    animation-delay: 0.8s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+    
+    
+}
+
+
+.landing-right p{
+    color: rgb(250, 250, 250);
+    writing-mode: vertical-rl;
+    text-orientation: sideways-right;
+    position: fixed;
+    right: 5%;
+    margin: 0 0 0 0;
+    margin-right: -3px;
+    bottom: 19vh;
+    font-weight: 200;
+    font-size: 0.9vw;
+}
+
+.landing-left i{
+    font-size: 16px;
+
+    color: rgb(250, 250, 250);
+    position: fixed;
+    left: 5%;
+    margin: 0 0 0 0;
+    margin-left: -3px;
+}
+
+.fa-github{
+    bottom: 27vh;
+}
+
+.fa-facebook-square{
+    bottom:  23vh;
+}
+
+.fa-instagram{
+    bottom: 19vh;
+}
+
+.hero-image svg{
+    width: 500px;
+    height: 70vh;
+}
+
+.project-heading{
+    color: rgb(250, 250, 250);
+    font-weight: 200;
+}
+
+.project-offset{
+    margin-left: 16.2vw;
+}
+
+.project-container{
+    flex: 0 0 auto;
+    width: 28.8%;
+}
+
+.project-holder{
+    width: 17vw;
+    height: 12vw;
+    border-radius: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #A2ABD0;
+    overflow: hidden;
+}
+
+.title-bar{
+    width: 16.7vw;
+    height: 1.5vw;
+    border-radius: 0px 0px 0 0px;
+    background-color: #A2ABD0;
+
+}
+
+.icon-holder{
+    margin-left: 1em;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.title-bar-icon{
+    margin-right: 0.5em;
+    width: 0.8vw;
+    height: 0.8vw;
+    border-radius: 50%;
+    background-color: #8B939C;
+}
+
+.icon-red{
+    background-color: #C84E4E;
+}
+
+.icon-yellow{
+    background-color: #D9C978;
+}
+
+.icon-green{
+    background-color: #53A57E;
+}
+
+.project-image{
+    width: 17vw;
+    height: 10.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-image img{
+    width: 15vw;
+}
